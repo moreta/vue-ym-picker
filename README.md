@@ -5,6 +5,10 @@ A Vue.js Year Month select component.
 + Dependency only vue.js & [moment](http://momentjs.com/)
 + Design css copy from <https://github.com/Semantic-Org/UI-Dropdown>
 
+# Demo
+
+<http://moreta.github.io/vue-ym-picker/>
+
 # Usage
 
 ## Install
