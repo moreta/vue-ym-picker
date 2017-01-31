@@ -3,11 +3,11 @@ var webpack = require('webpack')
 
 module.exports = {
   entry: {
-    'vue-ym-picker' : './src/main.js'
+    'vue-ym-picker' : './src/components/lib/index.js'
   },
   output: {
-    path: path.resolve(__dirname, './dist'),
-    publicPath: '/dist/',
+    path: path.resolve(__dirname, './publish'),
+    publicPath: './',
     filename: '[name].js',
     library: 'VueYmPicker',
     libraryTarget: 'umd'
@@ -35,7 +35,7 @@ module.exports = {
         loader: 'vue-html'
       },
       {
-        test: /\.(png|jpg|gif|svg)$/,
+        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         loader: 'url',
         query: {
           limit: 10000,
